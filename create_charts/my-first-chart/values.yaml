@@ -160,9 +160,16 @@ tolerations: []
 
 affinity: {}
 
-values: 
-  mysql: 
-    enabled: true
+global:
+  security:
+    allowInsecureImages: true
 
-  rabbitmq :
-    enabled : false
+mysql:
+  enabled: true
+  image:
+    repository: bitnamilegacy/mysql
+
+rabbitmq:
+  enabled: false
+  image:
+    repository: bitnamilegacy/rabbitmq
