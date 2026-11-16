@@ -160,6 +160,9 @@ tolerations: []
 
 affinity: {}
 
-values:
+values: 
   mysql: 
-    enabled: false
+    enabled: true
+
+  rabbitmq :
+    enabled : false
